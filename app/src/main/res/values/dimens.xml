@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="seekbar_thumb_size">24dp</dimen>
+    <dimen name="margin_first_top">200dp</dimen>
+    <dimen name="margin_top_all">16dp</dimen>
+    <dimen name="text_size_by">18sp</dimen>
+    <dimen name="width_0">0</dimen>
+    <dimen name="weight_r">2</dimen>
+    <dimen name="weight_l">1</dimen>
+    <dimen name="margin_button">25dp</dimen>
+</resources>

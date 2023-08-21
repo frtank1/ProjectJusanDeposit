@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentBlank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+    <LinearLayout
+        android:id="@+id/depositLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_first_top"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Депозит"
+            style="@style/TextLeft" />
+        <EditText
+            android:id="@+id/editTextDeposit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Введите сумму депозита"
+            android:padding="15dp"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/percentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_all"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/depositLayout"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0%"
+            style="@style/TextLeft" />
+        <include
+            android:id="@+id/customSeekBar"
+            layout="@layout/custom_seekbar_with_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            style="@style/TextRight"
+            android:max="25" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/commisionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_all"
+        android:layout_below="@id/percentLayout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Комиссия"
+            style="@style/TextLeft"
+            />
+        <TextView
+            android:id="@+id/textViewCommision"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/summ"
+            style="@style/TextRight" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/summLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_all"
+        android:layout_below="@id/commisionLayout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Сумма"
+            style="@style/TextLeft"
+            />
+        <TextView
+            android:id="@+id/textViewDeposit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/summ"
+            style="@style/TextRight" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/summLayout"
+        android:layout_marginTop="@dimen/margin_top_all"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonClear"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/margin_button"
+            android:layout_height="wrap_content"
+            android:text="С" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonOK"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/margin_button"
+            android:layout_height="wrap_content"
+            android:text="ОК" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/textBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textViewMadeIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Made in 🇰🇿 BY Azamat "
+            android:textSize="@dimen/text_size_by" />
+    </LinearLayout>
+</RelativeLayout>

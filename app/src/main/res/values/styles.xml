@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@color/button_color</item>
+    </style>
+    <style name="TextLeft" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="TextRight" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+</resources>
